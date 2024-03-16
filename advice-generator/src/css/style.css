@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/dice-5.css');
+
+body {
+    background-color: var(--background-color);
+    font-family: Manrope, 'sans-serif';
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--advice-card-color);
+    width: 400px;
+    height:250px ;
+    border-radius: 20px;
+}
+
+.aviso {
+    color: var(--advice-dice-color);
+}
+
+.frase {
+    color: var(--text-color);
+    padding: 20px 5px 50px 5px;
+    width: 85%;
+    text-align: center;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.linha {
+    color: var(--text-color);
+    transform: translateY(-50%);
+    background-color: var(--advice-card-color);
+    width: 30px;
+    text-align: center;
+}
+
+.dado {
+    background-color: var(--background-color);
+    color: var(--advice-dice-color);
+    border: 10px solid var(--advice-dice-color);
+    border-radius: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 375px) {
+    .conteudo {
+        height: 400px;
+        width: 300px;
+    }
+}
