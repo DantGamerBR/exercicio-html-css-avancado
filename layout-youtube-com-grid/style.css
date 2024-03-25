@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    background-color: #F7F7F7;
+    max-width: 900px;
+    margin: 35px;
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    grid-gap: 17px;
+    grid: "conteudo sugestao";
+}
+
+.conteudo {
+    grid-area: conteudo;
+    display: grid;
+    grid-gap: 10px 0;
+    grid: 
+    "video-principal" 217px
+    "titulo-principal"
+    "visualizacoes-principal"
+    "descricao"
+    / 543px;
+}
+
+.video-principal {
+    background-color: #C4C4C4;
+    grid-area: video-principal;
+}
+
+.titulo-principal {
+    grid-area: titulo-principal;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.visualizacoes-principal {
+    grid-area: visualizacoes-principal;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.descricao {
+    grid-area: descricao;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sugestao {
+    grid-area: sugestao;
+    display: grid;
+    gap: 20px;
+    grid: 
+    "propaganda" 56px
+    "recomendacao";
+}
+
+.propaganda {
+    background-color: #C4C4C4;
+    grid-area: propaganda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 300;
+    width: 270px;
+    height: 56px;
+}
+
+.recomendacao {
+    grid-area: recomendacao;
+    gap: 15px;
+    display: grid;
+    grid:
+    "video-recomendado-1"
+    "video-recomendado-2"
+    "video-recomendado-3";
+}
+
+.video-recomendado-1 {
+    grid-area: video-recomendado-1;
+    display: grid;
+    grid-gap: 0 5px;
+    grid: 
+    "thumb informacoes"
+    / 1fr 2fr;
+}
+
+.video-recomendado-2 {
+    grid-area: video-recomendado-2;
+    display: grid;
+    grid-gap: 0 5px;
+    grid: 
+    "thumb informacoes"
+    / 1fr 2fr;
+}
+
+.video-recomendado-3 {
+    grid-area: video-recomendado-3;
+    display: grid;
+    grid-gap: 0 5px;
+    grid: 
+    "thumb informacoes"
+    / 1fr 2fr;
+}
+
+.thumb {
+    background-color: #C4C4C4;
+    grid-area: thumb;
+}
+
+.informacoes {
+    display: grid;
+    grid: 
+    "titulo-thumb"
+    "canal"
+    "visualizacoes-thumb"
+    "data-upload";
+}
+
+.titulo-thumb {
+    grid-area: titulo-thumb;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.canal {
+    grid-area: canal;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.visualizacoes-thumb {
+    grid-area: visualizacoes-thumb;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.data-upload {
+    grid-area: data-upload;
+    font-size: 11px;
+    font-weight: 300;
+}
